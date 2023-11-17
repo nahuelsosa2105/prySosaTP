@@ -15,7 +15,10 @@ namespace prySosaTP
         public frmPrincipal()
         {
             InitializeComponent();
+            
         }
+
+        clsRegistro objBase;
 
         private void registroDeEmpleadosToolStripMenuItem_Click(object sender, EventArgs e)
         {
@@ -34,6 +37,14 @@ namespace prySosaTP
         private void toolStripStatusLabel1_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void frmPrincipal_Load(object sender, EventArgs e)
+        {
+            objBase = new clsRegistro();
+            objBase.ConectarBD();
+
+            lblEstado.Text = objBase.estadoConexion.ToString();
         }
     }
 }

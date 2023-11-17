@@ -23,5 +23,10 @@ namespace prySosaTP
             frmPrincipal principal = new frmPrincipal();
             principal.Show();
         }
+
+        private void btnRegistrar_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

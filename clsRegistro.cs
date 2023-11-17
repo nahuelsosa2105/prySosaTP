@@ -29,7 +29,7 @@ namespace prySosaTP
                 conexionBD = new OleDbConnection();
                 conexionBD.ConnectionString = cadenaConexion;
                 conexionBD.Open();
-                estadoConexion = "Conectado";
+                estadoConexion =Convert.ToString( DateTime.Now);
             }
             catch (Exception ex)
             {
