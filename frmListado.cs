@@ -20,7 +20,7 @@ namespace prySosaTP
 
         private void btnBuscar_Click(object sender, EventArgs e)
         {
-            objBaseDatos.BuscarApellido(txtBuscarApellido.Text);
+            objBaseDatos.BuscarApellido(txtBuscarApellido.Text,dgvGrilla);
         }
 
        
@@ -42,6 +42,11 @@ namespace prySosaTP
         public void TraerDatos(DataGridView grilla)
         {
 
+        }
+
+        private void btnBuscarBarrio_Click(object sender, EventArgs e)
+        {
+            objBaseDatos.BuscarCiudad(txtCiu.Text, dgvGrilla);
         }
     }
 }
